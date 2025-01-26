@@ -35,6 +35,7 @@ class EDA:
     def visualize_categorical_distribution(self, columns=None):
         """Visualize distributions of categorical features."""
         categorical_data = self.data.select_dtypes(include=['object', 'category'])
+        columns = ["CurrencyCode", "ProviderId", "ChannelId", "ProductCategory"]
         if columns:
             categorical_data = categorical_data[columns]
 
