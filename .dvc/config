@@ -1,0 +1,5 @@
+[core]
+    autostage = true
+    remote = bati-bank
+['remote "bati-bank"']
+    url = https://github.com/tesfaymebre/Bati-Bank.git
