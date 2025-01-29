@@ -1,13 +1,7 @@
 stages:
-  data_ingestion:
-    cmd: python scripts/data_ingestion.py
+  data_cleaning:
+    cmd: python scripts/data_cleaning.py
     deps:
-      - data/raw/
+      - data/raw/data.csv
     outs:
-      - data/preprocessed/
-  data_preprocessing:
-    cmd: python scripts/data_preprocessing.py
-    deps:
-      - data/preprocessed/
-    outs:
-      - data/preprocessed/cleaned/
+      - data/preprocessed/cleaned/final_cleaned_data.csv
